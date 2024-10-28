@@ -1,0 +1,55 @@
+require:
+  - rubocop-rails
+  - rubocop-factory_bot
+AllCops:
+  SuggestExtensions: false
+  NewCops: disable
+  Exclude:
+    - 'db/migrate/*.rb'
+    - 'db/schema.rb'
+    - 'db/seeds.rb'
+    - 'config.ru'
+    - 'db/data_schema.rb'
+    - 'bin/*'
+    - 'config/**/*'
+    - 'node_modules/**/*'
+    - 'vendor/**/*'
+Metrics/BlockLength:
+  Enabled: false
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+Layout/CommentIndentation:
+  AllowForAlignment: true
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+Layout/MultilineOperationIndentation:
+  EnforcedStyle: indented
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/**/*.rb'
+Metrics/AbcSize:
+  Max: 40
+Metrics/ClassLength:
+  Max: 150
+Metrics/MethodLength:
+  Max: 20
+Metrics/ParameterLists:
+  Max: 6
+Naming/VariableNumber:
+  Enabled: false
+Style/AsciiComments:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+HelperInstanceVariable:
+  Enabled: false

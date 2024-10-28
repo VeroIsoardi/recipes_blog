@@ -1,15 +1,15 @@
+# frozen_string_literal: true
+
 module RecipesHelper
   def category_icon(category)
     return if category.blank?
 
-    icon =
-      case category
-      when 'plato principal'
-        'pizza'
-      when 'postre'
-        'cake'
-      when 'snack'
-        'cookie'
-      end
+    categories_icons = {
+      'plato principal': 'pizza',
+      'postre': 'cake',
+      'snack': 'cookie',
+    }
+
+    categories_icons[category]
   end
 end
