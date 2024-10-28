@@ -219,7 +219,7 @@ GEM
       racc (~> 1.4)
     ostruct (0.6.0)
     ox (2.14.18)
-    pagy (8.6.3)
+    pagy (9.1.0)
     parallel (1.26.3)
     parser (3.3.5.0)
       ast (~> 2.4.1)
@@ -410,7 +410,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
-  pagy (~> 8.6)
+  pagy (~> 9.1)
   pg (~> 1.1)
   pg_search (~> 2.3)
   phosphor_icons (~> 0.3.0)
