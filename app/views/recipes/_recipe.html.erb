@@ -1,17 +1,11 @@
-<div id="<%= dom_id recipe %>">
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Title:</strong>
-    <%= recipe.title %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Ingredients:</strong>
-    <%= recipe.ingredients %>
-  </p>
-
-  <p class="my-5">
-    <strong class="block font-medium mb-1">Steps:</strong>
-    <%= recipe.steps %>
-  </p>
-
-</div>
+<%= link_to recipe, class: "block w-full cursor-pointer py-4 border-b border-neutral-100", id: dom_id(recipe) do %>
+  <div class="p-4 bg-white">
+    <p class="font-medium text-cyan-700 text-md flex items-center gap-1">
+      <%= phosphor_icon(category_icon(recipe.category), class: 'h-4 w-4')%>
+      <%= recipe.category.capitalize %>
+    </>
+    <p class="text-xl font-medium text-gray-800">
+      <%= recipe.title %>
+    </p>
+  </div>
+<% end %>

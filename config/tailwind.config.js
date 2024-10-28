@@ -5,13 +5,13 @@ module.exports = {
     './public/*.html',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/**/*.{erb,haml,html,slim}',
+    './app/views/**/*.erb',
      './node_modules/flowbite/**/*.js',
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['DM Serif', ...defaultTheme.fontFamily.sans],
       },
     },
   },

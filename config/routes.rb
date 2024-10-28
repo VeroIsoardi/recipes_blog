@@ -7,5 +7,5 @@ Rails.application.routes.draw do
   get 'service-worker' => 'pwa#service_worker', as: :pwa_service_worker
   get 'manifest' => 'pwa#manifest', as: :pwa_manifest
 
-  root "recipes#index"
+  root 'recipes#index'
 end
