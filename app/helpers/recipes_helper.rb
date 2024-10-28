@@ -5,9 +5,9 @@ module RecipesHelper
     return if category.blank?
 
     categories_icons = {
-      'plato principal': 'pizza',
-      'postre': 'cake',
-      'snack': 'cookie',
+      'plato principal' => 'pizza',
+      'postre' => 'cake',
+      'snack' => 'cookie',
     }
 
     categories_icons[category]

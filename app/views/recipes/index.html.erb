@@ -15,7 +15,7 @@
           </p>
         </div>
 
-        <% if Current.user.present? %>
+        <% if authenticated? %>
           <%= link_to "Nueva receta", new_recipe_path, class: "rounded-lg py-3 px-5 bg-fuchsia-800 text-white block font-medium" %>
         <% end %>
       </div>
