@@ -74,7 +74,7 @@ end
 group :test do
   gem 'capybara'
   gem 'rspec-bdd-style'
-  gem 'selenium-webdriver', '< 4.11'
+  gem 'selenium-webdriver', '< 4.26'
   gem 'shoulda-matchers', '~> 6.0'
 end
 gem 'tailwindcss-rails', '~> 3.0'
