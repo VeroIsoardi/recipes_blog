@@ -6,7 +6,7 @@ ruby '3.3.5'
 # Use main development branch of Rails
 gem 'rails', github: 'rails/rails', branch: 'main'
 
-gem 'pagy', '~> 8.6'
+gem 'pagy', '~> 9.1'
 gem 'pg_search', '~> 2.3'
 # The modern asset pipeline for Rails [https://github.com/rails/propshaft]
 gem 'propshaft'
