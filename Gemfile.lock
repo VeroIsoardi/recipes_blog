@@ -267,6 +267,9 @@ GEM
     reline (0.5.10)
       io-console (~> 0.5)
     rexml (3.3.9)
+    richer_text (0.17.0)
+      rails (> 7.0.0)
+      ruby-oembed
     rspec-bdd-style (1.0.3)
     rspec-core (3.13.2)
       rspec-support (~> 3.13.0)
@@ -313,6 +316,7 @@ GEM
       rubocop-rspec_rails (~> 2.28)
     rubocop-rspec_rails (2.29.1)
       rubocop (~> 1.61)
+    ruby-oembed (0.18.0)
     ruby-progressbar (1.13.0)
     rubyzip (2.3.2)
     securerandom (0.3.1)
@@ -417,6 +421,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails!
+  richer_text (~> 0.17.0)
   rspec-bdd-style
   rspec-rails
   rubocop (~> 1.56)

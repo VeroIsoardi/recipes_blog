@@ -1,9 +1,11 @@
 {
   "dependencies": {
+    "@afomera/richer-text": "^2.0.0",
     "@tiptap/core": "^2.9.1",
     "@tiptap/pm": "^2.9.1",
     "@tiptap/starter-kit": "^2.9.1",
     "flowbite": "^2.5.2",
-    "flowbite-typography": "^1.0.4"
+    "flowbite-typography": "^1.0.4",
+    "highlight.js": "^11.10.0"
   }
 }

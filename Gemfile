@@ -78,3 +78,5 @@ group :test do
   gem 'shoulda-matchers', '~> 6.0'
 end
 gem 'tailwindcss-rails', '~> 3.0'
+
+gem "richer_text", "~> 0.17.0"
