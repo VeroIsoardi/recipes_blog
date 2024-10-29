@@ -66,7 +66,7 @@ group :development do
   gem 'rubocop-capybara', '~> 2.19'
   gem 'rubocop-factory_bot', '~> 2.24'
   gem 'rubocop-rails', '~> 2.21'
-  gem 'rubocop-rspec', '~> 2.24'
+  gem 'rubocop-rspec', '~> 3.2'
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem 'web-console'
 end
