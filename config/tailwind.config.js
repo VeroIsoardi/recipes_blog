@@ -11,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['DM Serif', ...defaultTheme.fontFamily.sans],
+        sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+        serif : ['DM Serif Display', ...defaultTheme.fontFamily.serif],
       },
     },
   },

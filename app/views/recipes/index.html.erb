@@ -1,34 +1,31 @@
 <% content_for :title, "Recetas" %>
 
-<div class="relative pt-4 md:pt-16 ml-auto z-10">
-  <div class="flex items-end justify-between mb-12 header">
-    <div class="title">
-      <%= phosphor_icon('newspaper', class: 'hidden md:block w-12 h-12 text-cyan-700')%>
-      <p class="text-4xl font-bold text-gray-800">
-        Curaduría de recetas por <span class="text-fuchsia-700 text-5xl">Vero</span>
-      </p>
+<div class="relative z-10">
+  <div class="flex items-start justify-between mb-4 md:mb-12 header">
+    <div class="title text-start">
+      <%= phosphor_icon('newspaper', class: 'hidden md:block text-cyan-700', width: '64', height: '64')%>
+      <h1 class="text-gray-900 font-bold text-2xl md:text-5xl">Curaduría de recetas por <span class="text-fuchsia-700">Vero</span></h1>
     </div>
 
     <% if authenticated? %>
-      <%= link_to "Nueva receta", new_recipe_path, class: "rounded-lg py-3 px-5 bg-fuchsia-800 text-white block font-medium" %>
+      <%= link_to "Nueva receta", new_recipe_path, class: "mt-6 rounded-lg py-1 px-2 bg-fuchsia-800 text-white text-sm" %>
     <% end %>
   </div>
-  <div class="w-full justify-center flex">
-    <div class="flex space-x-3">
-      <%= form_with model: false, url: recipes_path, method: :get, data: { turbo_action: "replace", turbo_permanent: "", controller: 'filter' } do |f| %>
-        <%= f.search_field :query,
-          placeholder: 'Buscar por nombre o categoría',
-          autocomplete: 'off',
-          value: params[:query],
-          data: { filter_target: 'input', action: 'filter#submit' },
-          class: 'w-72 rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-2/3 py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-fuchsia-600 focus:border-transparent' %>
-        <%= f.submit "Buscar", class: "flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-fuchsia-600 rounded-lg shadow-md hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2 focus:ring-offset-purple-200" %>
-      <% end %>
-    </div>
+
+  <div class="flex justify-center w-full">
+    <%= form_with model: false, url: recipes_path, method: :get, data: { turbo_action: "replace", turbo_permanent: "", controller: 'filter' }, class: 'flex gap-3 w-1/2' do |f| %>
+      <%= f.search_field :query,
+        placeholder: 'Buscar por nombre o categoría',
+        autocomplete: 'off',
+        value: params[:query],
+        data: { filter_target: 'input', action: 'filter#submit' },
+        class: 'w-full md:!w-[400px] rounded-lg flex-1 appearance-none border border-gray-400 py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-fuchsia-600 focus:border-transparent' %>
+      <%= f.submit "Buscar", class: "flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-fuchsia-600 rounded-lg shadow-md hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-500 focus:ring-offset-2 focus:ring-offset-purple-200" %>
+    <% end %>
   </div>
 
   <% if @recipes.present? %>
-    <div class="grid grid-cols-1 gap-3 md:gap-6 mt-4 md:mt-16" id="recipes">
+    <div class="grid grid-cols-1 mt-4 md:mt-16" id="recipes">
       <%= render @recipes %>
     </div>
 
