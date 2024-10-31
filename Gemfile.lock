@@ -349,10 +349,6 @@ GEM
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.1)
-    suspenders (0.2.4)
-      bundler (>= 1.0.7)
-      rails (>= 3.0.3)
-      trout (>= 0.3.0)
     tailwindcss-rails (3.0.0)
       railties (>= 7.0.0)
       tailwindcss-ruby
@@ -369,7 +365,6 @@ GEM
     thruster (0.1.8-x86_64-darwin)
     thruster (0.1.8-x86_64-linux)
     timeout (0.4.1)
-    trout (0.3)
     turbo-rails (2.0.11)
       actionpack (>= 6.0.0)
       railties (>= 6.0.0)
@@ -433,7 +428,6 @@ DEPENDENCIES
   solid_cache
   solid_queue
   stimulus-rails
-  suspenders
   tailwindcss-rails (~> 3.0)
   thruster
   turbo-rails

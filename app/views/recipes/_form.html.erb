@@ -1,7 +1,7 @@
 <%= form_with(model: recipe, class: "contents") do |form| %>
   <% if recipe.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
-      <h2><%= pluralize(recipe.errors.count, "error") %> prohibited this recipe from being saved:</h2>
+      <h2><%= pluralize(recipe.errors.count, "error") %> hizo que no se pueda guardar.</h2>
 
       <ul>
         <% recipe.errors.each do |error| %>
@@ -12,23 +12,21 @@
   <% end %>
 
   <div class="my-5">
-    <%= form.label :title %>
-    <%= form.text_field :title, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.label :title, 'Nombre', class: 'label' %>
+    <%= form.text_field :title, class: "input mt-2 w-full", placeholder: 'Qué receta es' %>
   </div>
 
   <div class="my-5">
-    <%= form.label :ingredients %>
-    <%= form.text_field :ingredients, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
-    <%= form.richer_text_area :extra_info, placeholder: " ", callouts: true, tables: true, class: "rounded-b-2xl min-h-44" %>
-  </div>
+    <%= form.label :ingredients, 'Ingredientes', class: 'label' %>
+    <%= form.richer_text_area :ingredients, placeholder: "Ingrese los ingredientes", class: "rounded-b-2xl min-h-44 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
-    <%= form.label :steps %>
-    <%= form.text_field :steps, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.label :steps, 'Preparación', class: 'label' %>
+    <%= form.richer_text_area :steps, placeholder: "Ingrese los ingredientes", class: "rounded-b-2xl min-h-44 block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= form.submit 'Guardar', class: "inline-block btn-primary" %>
   </div>
 <% end %>
