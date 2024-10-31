@@ -2,7 +2,7 @@
 
 class PwaController < ApplicationController
   protect_from_forgery except: :service_worker
-  skip_before_action :authenticate_user
+  skip_before_action :require_authentication
 
   def service_worker; end
 
