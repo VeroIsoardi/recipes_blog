@@ -1,0 +1,18 @@
+<%= turbo_stream.append :recipes do %>
+  <%= render @recipes %>
+<% end %>
+
+<% if @pagy.next.present? %>
+  <%= turbo_stream.replace :next_page do %>
+    <%= turbo_frame_tag :next_page, src: recipes_path(page: @pagy.next, query: params[:query], format: :turbo_stream), loading: :lazy, class: 'flex justify-center' do %>
+      <div class="text-center">
+        <div role="status">
+          <%= phosphor_icon('spinner-gap', class: 'inline w-8 h-8 text-gray-200 animate-spin fill-fuchsia-600')%>
+        </div>
+        <span class="sr-only">Loading...</span>
+      </div>
+    <% end %>
+  <% end %>
+<% else %>
+  <%= turbo_stream.remove :next_page %>
+<% end %>

@@ -25,8 +25,16 @@
   </head>
 
   <body>
-    <main class="bg-white mx-auto">
-      <%= yield %>
+    <main class="bg-white w-full px-4 md:mx-auto">
+      <section class="relative w-full">
+        <div class="absolute inset-0 grid grid-cols-2 -space-x-52 opacity-30">
+          <div class="blur-[106px] h-56 bg-purple-400"></div>
+          <div class="blur-[106px] h-32 bg-gradient-to-r from-cyan-400 to-sky-300"></div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 md:px-16">
+          <%= yield %>
+        </div>
+      </section>
     </main>
   </body>
 </html>

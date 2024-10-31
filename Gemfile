@@ -79,4 +79,4 @@ group :test do
 end
 gem 'tailwindcss-rails', '~> 3.0'
 
-gem "richer_text", "~> 0.17.0"
+gem 'richer_text', '~> 0.17.0'
