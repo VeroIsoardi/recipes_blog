@@ -2,7 +2,7 @@
   <div class="px-4 py-3 bg-white w-full rounded">
     <p class="font-medium text-cyan-700 text-md flex items-center justify-start gap-1">
       <%= phosphor_icon(category_icon(recipe.category), class: 'h-4 w-4')%>
-      <%= recipe.category.capitalize %>
+      <%= recipe.category&.capitalize %>
     </>
     <p class="text-xl font-medium text-gray-800 flex justify-start">
       <%= recipe.title %>

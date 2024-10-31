@@ -1,35 +1,34 @@
 <% content_for :title, @recipe.title %>
 <%= content_for(:back_button_url, recipes_path) %>
 
-<div class="relative z-10">
-  <div class="flex items-center justify-between w-full">
+<div class="card w-full">
+  <div class="flex items-center justify-between">
+    <p class="font-medium text-cyan-700 flex items-center gap-1 mb-2">
+      <%= phosphor_icon(category_icon(@recipe.category), class: 'h-5 w-5')%>
+      <%= @recipe.category&.capitalize %>
+    </p>
 
-    <% if authenticated? %>
-      <div class="flex gap-3 items-center mr-4">
-        <%= link_to phosphor_icon('pencil-simple-line', class: 'h-6 w-6 text-gray-600'), edit_recipe_path(@recipe) %>
-        <%= button_to phosphor_icon('trash', class: 'h-6 w-6 text-red-600'), @recipe, method: :delete, class: 'flex items-center' %>
-      </div>
-    <% end %>
-  </div>
+    <div class="actions flex gap-3 items-center">
+      <%= tag.button phosphor_icon('share-network', class: 'h-5 w-5'), data: {
+        controller: 'share',
+        share_title_value: @recipe.title,
+        share_url_value: recipe_url(@recipe),
+        action: 'share#click' } %>
 
-  <div class="mx-auto w-full md:w-1/2 min-h-[650px] flex bg-white z-10 rounded-lg shadow-md">
-    <div class="p-8">
-      <p class="font-medium text-cyan-700 text-lg flex items-center gap-1 mb-2">
-        <%= phosphor_icon(category_icon(@recipe.category), class: 'h-6 w-6')%>
-        <%= @recipe.category.capitalize %>
-      </p>
-      <h1 class="text-4xl font-bold text-gray-800 mb-4">
-        <%= @recipe.title %>
-      </h1>
-
-      <h2 class="text-2xl font-medium text-gray-700">Ingredientes</h2>
-      <p class="prose mb-4">
-        <%= @recipe.ingredients %>
-      </p>
-
-      <h2 class="text-2xl font-medium text-gray-700">Preparación</h2>
-      <p class="prose">
-        <%= @recipe.steps %>
+      <% if authenticated? %>
+        <%= link_to phosphor_icon('pencil-simple', class: 'h-5 w-5'), edit_recipe_path(@recipe) %>
+        <%= button_to phosphor_icon('trash', class: 'h-5 w-5 text-red-600'), @recipe, method: :delete, class: 'flex items-center', data: { turbo: false } %>
+      <% end %>
     </div>
   </div>
+
+  <h1 class="text-4xl font-bold text-gray-800 mb-4">
+    <%= @recipe.title %>
+  </h1>
+
+  <h2 class="text-2xl font-medium text-gray-700">Ingredientes</h2>
+  <p class="prose mb-4"><%= @recipe.ingredients %></p>
+
+  <h2 class="text-2xl font-medium text-gray-700">Preparación</h2>
+  <p class="prose"><%= @recipe.steps %></p>
 </div>

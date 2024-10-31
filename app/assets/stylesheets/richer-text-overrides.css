@@ -1,0 +1,53 @@
+.ProseMirror blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid rgba(229, 231, 235, 0.5);
+}
+
+.ProseMirror hr {
+  border: none;
+  border-top: 2px solid rgba(229, 231, 235, 0.5);
+  margin: 2rem 0;
+}
+
+.ProseMirror ul {
+  list-style: disc;
+}
+
+.ProseMirror ol {
+  list-style: decimal;
+}
+
+.ProseMirror table td, .ProseMirror table th{
+  border: 2px solid rgba(126, 131, 141, 0.5);
+}
+
+div.tiptap:focus-visible {
+  outline-offset: 0;
+  outline-width: 2px;
+  border-color: var(--fallback-bc, oklch(var(--bc) / .2));
+  box-shadow: none;
+  outline-color: var(--fallback-bc, oklch(var(--bc) / .2));
+  outline-style: solid;
+}
+
+.prose p:first-of-type {
+  margin-top: 0;
+}
+
+.prose p:last-of-type {
+  margin-bottom: 0;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+}
+
+p[data-placeholder].is-empty {
+  color: #cccdcf;
+}
+
+div[data-tippy-root] {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 6px, rgba(0, 0, 0, 0.2) 0px 3px 6px;
+}

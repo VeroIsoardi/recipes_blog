@@ -16,7 +16,7 @@
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/favicon.png">
   
-    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "tailwind", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
@@ -44,8 +44,8 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
-          <div class="relative pt-4 md:pt-16 ml-auto">
-            <div class="lg:w-2/3 text-center mx-auto">
+          <div class="relative pt-4 md:pt-10 ml-auto">
+            <div class="lg:w-2/3 mx-auto">
               <%= yield %>
             </div>
           </div>
