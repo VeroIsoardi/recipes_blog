@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ssh "root@${KAMAL_HOSTS}" "docker network create --driver bridge private || true"
