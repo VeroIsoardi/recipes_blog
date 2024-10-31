@@ -19,6 +19,8 @@
   <div class="my-5">
     <%= form.label :ingredients %>
     <%= form.text_field :ingredients, class: "block shadow rounded-md border border-gray-400 outline-none px-3 py-2 mt-2 w-full" %>
+    <%= form.richer_text_area :extra_info, placeholder: " ", callouts: true, tables: true, class: "rounded-b-2xl min-h-44" %>
+  </div>
   </div>
 
   <div class="my-5">

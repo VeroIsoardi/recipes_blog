@@ -1,5 +1,5 @@
-<%= link_to recipe, class: "block w-full cursor-pointer py-4 border-b border-neutral-100", id: dom_id(recipe) do %>
-  <div class="p-4 bg-white">
+<%= link_to recipe, class: "block w-full cursor-pointer pb-4 border-b border-neutral-100", id: dom_id(recipe) do %>
+  <div class="p-4 bg-white rounded">
     <p class="font-medium text-cyan-700 text-md flex items-center gap-1">
       <%= phosphor_icon(category_icon(recipe.category), class: 'h-4 w-4')%>
       <%= recipe.category.capitalize %>
