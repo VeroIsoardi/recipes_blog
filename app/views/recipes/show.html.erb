@@ -1,9 +1,8 @@
-<div class="bg-fuchsia-50 w-dvw h-dvh">
-  <div class="flex items-center justify-between">
-    <%= link_to recipes_path, class: "flex items-center gap-1 pt-4 ml-4 text-gray-600 hover:text-gray-800 font-medium" do %>
-      <%= phosphor_icon('caret-left', class:'h-4 w-4') %>
-      Volver
-    <% end %>
+<% content_for :title, @recipe.title %>
+<%= content_for(:back_button_url, recipes_path) %>
+
+<div class="relative z-10">
+  <div class="flex items-center justify-between w-full">
 
     <% if authenticated? %>
       <div class="flex gap-3 items-center mr-4">
