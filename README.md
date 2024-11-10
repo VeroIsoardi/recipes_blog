@@ -6,7 +6,7 @@ This is a really simple application that allows people to see and filter recipes
 
 ### 💻 Tech Stack
 * Ruby 3.3.5
-* Rails 8.1.0
+* Rails 8.0.0
 * Hotwire (with turbo and stimulus)
 * Tailwind
 * PostgreSQL 16.3

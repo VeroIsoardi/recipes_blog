@@ -8,7 +8,7 @@ servers:
 
 proxy:
   ssl: true
-  host: cocina.veroisoardi.com.ar
+  host: recetas.veroisoardi.com.ar
 
 registry:
   username:
