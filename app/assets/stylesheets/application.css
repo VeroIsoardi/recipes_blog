@@ -7,7 +7,4 @@
  * depending on specificity.
  *
  * Consider organizing styles into separate files for maintainability.
-
- *= require richer-text-overrides
- *= require_self
  */
