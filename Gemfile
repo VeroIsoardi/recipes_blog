@@ -2,9 +2,8 @@
 
 source 'https://rubygems.org'
 
-ruby '3.3.5'
 # Use main development branch of Rails
-gem 'rails', github: 'rails/rails', branch: 'main'
+gem 'rails', '8.0'
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', require: false

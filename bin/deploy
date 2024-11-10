@@ -1,0 +1,3 @@
+#!/usr/bin/deploy sh
+
+exec dotenv -f ".env.production" kamal deploy
