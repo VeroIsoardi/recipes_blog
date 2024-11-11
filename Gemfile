@@ -10,7 +10,7 @@ gem 'bootsnap', require: false
 gem 'importmap-rails'
 gem 'jbuilder'
 gem 'kamal', require: false
-gem 'pagy', '~> 9.1'
+gem 'pagy', '~> 9.2'
 gem 'pg', '~> 1.1'
 gem 'pg_search', '~> 2.3'
 gem 'phosphor_icons', '~> 0.3.0'
