@@ -405,7 +405,7 @@ DEPENDENCIES
   phosphor_icons (~> 0.3.0)
   propshaft
   puma (>= 5.0)
-  rails (= 8.0)
+  rails (~> 8.0)
   richer_text (~> 0.17.0)
   rspec-bdd-style
   rspec-rails

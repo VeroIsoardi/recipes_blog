@@ -2,8 +2,7 @@
 
 source 'https://rubygems.org'
 
-# Use main development branch of Rails
-gem 'rails', '8.0'
+gem 'rails', '~> 8.0'
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', require: false
