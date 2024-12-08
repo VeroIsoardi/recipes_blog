@@ -317,15 +317,6 @@ GEM
       websocket (~> 1.0)
     shoulda-matchers (6.4.0)
       activesupport (>= 5.2.0)
-    solid_cable (3.0.2)
-      actioncable (>= 7.2)
-      activejob (>= 7.2)
-      activerecord (>= 7.2)
-      railties (>= 7.2)
-    solid_cache (1.0.6)
-      activejob (>= 7.2)
-      activerecord (>= 7.2)
-      railties (>= 7.2)
     solid_queue (1.0.0)
       activejob (>= 7.1)
       activerecord (>= 7.1)
@@ -416,8 +407,6 @@ DEPENDENCIES
   rubocop-rspec (~> 3.2)
   selenium-webdriver (< 4.27)
   shoulda-matchers (~> 6.0)
-  solid_cable
-  solid_cache
   solid_queue
   stimulus-rails
   tailwindcss-rails (~> 3.0)
