@@ -18,7 +18,7 @@
 
   <div class="my-5">
     <%= form.label :category, 'Categoría', class: 'label'%>
-    <%= form.select :category, options_for_select(Recipe.categories), { prompt: 'A qué categoría pertenece' }, class: 'input mt-2 w-full'%>
+    <%= form.select :category, options_for_select(Recipe.categories.map {|c| [c[0].capitalize, c[0]]}), { prompt: 'A qué categoría pertenece' }, class: 'input mt-2 w-full'%>
   </div>
 
   <div class="my-5">
