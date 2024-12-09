@@ -14,6 +14,18 @@
     font-family: 'DM Serif Display', serif;
     @apply tracking-wide;
   }
+
+  h1 {
+    @apply text-3xl my-4;
+  }
+
+  h2 {
+    @apply text-2xl my-4;
+  }
+
+  h3 {
+    @apply text-xl my-4;
+  }
 }
 
 @layer components {
@@ -45,5 +57,29 @@
 
   .card {
     @apply rounded-lg bg-white shadow-lg p-4 md:p-10 md:mx-auto w-full; 
+  }
+
+  .ProseMirror {
+    @apply p-4;
+  }
+
+  .ProseMirror ul {
+    @apply list-disc pl-4;
+  }
+
+  .ProseMirror ol {
+    @apply list-decimal pl-4;
+  }
+
+  .ProseMirror blockquote {
+    @apply border-l-4 border-fuchsia-600 bg-fuchsia-50 ml-2 pl-2 py-2 my-4;
+  }
+
+  .ProseMirror pre {
+    @apply overflow-x-auto bg-gray-800 text-white rounded-lg p-4 my-4;
+  }
+
+  .ProseMirror a {
+    @apply text-fuchsia-600 underline hover:text-fuchsia-800;
   }
 }
