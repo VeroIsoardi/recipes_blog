@@ -82,4 +82,17 @@
   .ProseMirror a {
     @apply text-fuchsia-600 underline hover:text-fuchsia-800;
   }
+
+  .ProseMirror td {
+    @apply border border-gray-300 p-2;
+  }
+
+  .richer-text {
+    @apply prose prose-a:text-fuchsia-700 prose-a:underline prose-a:hover:text-fuchsia-900
+      prose-h1:text-3xl prose-headings:my-4 prose-h2:text-2xl prose-h3:text-xl prose-ul:list-disc prose-ol:list-decimal prose-blockquote:border-l-4 prose-blockquote:bg-fuchsia-50 prose-blockquote:ml-2 prose-blockquote:border-fuchsia-600 prose-blockquote:p-2 prose-blockquote:my-4 prose-pre:overflow-x-auto prose-pre:bg-gray-800 prose-pre:text-white prose-pre:rounded-lg prose-pre:p-4 prose-pre:my-4;
+  }
+  .richer-text table th, .richer-text table td {
+    @apply bg-white border-white;
+  }
+
 }
