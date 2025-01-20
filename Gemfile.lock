@@ -413,7 +413,7 @@ DEPENDENCIES
   rubocop-factory_bot (~> 2.24)
   rubocop-rails (~> 2.21)
   rubocop-rspec (~> 3.2)
-  selenium-webdriver (< 4.27)
+  selenium-webdriver (< 4.28)
   shoulda-matchers (~> 6.0)
   solid_queue
   stimulus-rails
