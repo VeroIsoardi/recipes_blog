@@ -266,7 +266,7 @@ GEM
     reline (0.6.0)
       io-console (~> 0.5)
     rexml (3.4.0)
-    richer_text (0.17.0)
+    richer_text (0.18.0)
       rails (> 7.0.0)
       ruby-oembed
     rspec-bdd-style (1.0.3)
@@ -405,7 +405,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0)
-  richer_text (~> 0.17.0)
+  richer_text (~> 0.18.0)
   rspec-bdd-style
   rspec-rails
   rubocop (~> 1.68)
