@@ -7,7 +7,11 @@ module RecipesHelper
     categories_icons = {
       'plato principal' => 'pizza',
       'postre' => 'cake',
-      'snack' => 'cookie',
+      'desayuno y merienda' => 'cookie',
+      'snack' => 'popcorn',
+      'entrada' => 'bowl-steam',
+      'panificados' => 'bread',
+      'dips' => 'cheese'
     }
 
     categories_icons[category]

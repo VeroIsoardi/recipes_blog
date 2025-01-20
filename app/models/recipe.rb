@@ -6,7 +6,7 @@ class Recipe < ApplicationRecord
   has_richer_text :ingredients, store_as: :json
   has_richer_text :steps, store_as: :json
 
-  enum :category, ['plato principal', 'postre', 'snack'].index_by(&:itself)
+  enum :category, ['plato principal', 'postre', 'snack', 'entrada', 'desayuno y merienda', 'panificados', 'dips'].index_by(&:itself)
 
   scope :sort_by_title, -> { order(:title) }
 

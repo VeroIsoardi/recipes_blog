@@ -18,17 +18,17 @@
 
   <div class="my-5">
     <%= form.label :category, 'Categoría', class: 'label'%>
-    <%= form.select :category, options_for_select(Recipe.categories), { prompt: 'A qué categoría pertenece' }, class: 'input mt-2 w-full'%>
+    <%= form.select :category, options_for_select(Recipe.categories.map {|c| [c[0].capitalize, c[0]]}, recipe.category), { prompt: 'A qué categoría pertenece' }, class: 'input mt-2 w-full'%>
   </div>
 
   <div class="my-5">
     <%= form.label :ingredients, 'Ingredientes', class: 'label' %>
-    <%= form.richer_text_area :ingredients, placeholder: "Ingrese los ingredientes", class: "w-full flex-1 appearance-none text-gray-700 placeholder-gray-400 text-base min-h-40" %>
+    <%= form.richer_text_area :ingredients, placeholder: "Ingrese los ingredientes", class: "w-full flex-1 appearance-none text-gray-700 placeholder-gray-400 text-base min-h-40", tables: true %>
   </div>
 
   <div class="my-5">
     <%= form.label :steps, 'Preparación', class: 'label mb-2' %>
-    <%= form.richer_text_area :steps, placeholder: "Ingrese los ingredientes", class: "w-full flex-1 appearance-none text-gray-700 placeholder-gray-400 text-base min-h-64" %>
+    <%= form.richer_text_area :steps, placeholder: "Paso a paso", class: "w-full flex-1 appearance-none text-gray-700 placeholder-gray-400 text-base min-h-64 prose" %>
   </div>
 
   <div class="inline">
