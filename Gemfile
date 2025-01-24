@@ -18,7 +18,7 @@ gem 'puma', '>= 5.0'
 gem 'richer_text', '~> 0.18.0'
 gem 'solid_queue'
 gem 'stimulus-rails'
-gem 'tailwindcss-rails', '~> 3.0'
+gem 'tailwindcss-rails', '~> 3.3'
 gem 'thruster', require: false
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[windows jruby]
