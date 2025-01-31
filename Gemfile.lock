@@ -130,7 +130,8 @@ GEM
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
     io-console (0.8.0)
-    irb (1.14.3)
+    irb (1.15.1)
+      pp (>= 0.6.0)
       rdoc (>= 4.0.0)
       reline (>= 0.4.2)
     jbuilder (2.13.0)
@@ -208,6 +209,9 @@ GEM
       actionview
       ox (~> 2.14)
       railties
+    pp (0.6.2)
+      prettyprint
+    prettyprint (0.2.0)
     propshaft (1.1.0)
       actionpack (>= 7.0.0)
       activesupport (>= 7.0.0)
@@ -221,7 +225,7 @@ GEM
       nio4r (~> 2.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (3.1.8)
+    rack (3.1.9)
     rack-session (2.1.0)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -266,7 +270,7 @@ GEM
     reline (0.6.0)
       io-console (~> 0.5)
     rexml (3.4.0)
-    richer_text (0.18.0)
+    richer_text (0.19.0)
       rails (> 7.0.0)
       ruby-oembed
     rspec-bdd-style (1.0.3)
@@ -405,7 +409,7 @@ DEPENDENCIES
   propshaft
   puma (>= 5.0)
   rails (~> 8.0)
-  richer_text (~> 0.18.0)
+  richer_text (~> 0.19.0)
   rspec-bdd-style
   rspec-rails
   rubocop (~> 1.68)
