@@ -37,7 +37,7 @@ group :development do
   gem 'rubocop-capybara', '~> 2.19'
   gem 'rubocop-factory_bot', '~> 2.24'
   gem 'rubocop-rails', '~> 2.21'
-  gem 'rubocop-rspec', '~> 3.2'
+  gem 'rubocop-rspec', '~> 3.5'
   gem 'web-console'
 end
 
