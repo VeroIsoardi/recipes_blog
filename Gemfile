@@ -44,6 +44,6 @@ end
 group :test do
   gem 'capybara'
   gem 'rspec-bdd-style'
-  gem 'selenium-webdriver', '< 4.30'
+  gem 'selenium-webdriver', '< 4.32'
   gem 'shoulda-matchers', '~> 6.0'
 end
